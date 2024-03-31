@@ -4,7 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <metaname="viewport" content="width=device-width-initial-scale=1.0">
-    <title>Document</title>
+    <title>Piha Advertisement</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\GGPC\OneDrive\Desktop\6420 Assessment 1\piha.css">
+    <style>
+        .image-container {
+           position: absolute;
+           height: 1050px;
+           width: 100%;
+           top: 0;
+           left: 0;
+           opacity: 0;
+           animation-fill-mode: forwards; 
+        }
+
+    #adScene1Image1 {
+        position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1050px;
+        left: -531px;
+        top: -60px;
+        
+
+        visibility: visible;
+        animation-name: fadeIn;
+        animation-duration: 5s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+
+}
+#adScene2Image2 {
+            position: absolute;
+            height: 1050px;
+            left: 531px;
+            top: -60px;
+            opacity: 0;
+            animation-name: background-fadeOut;
+            animation-duration: 4s;
+            animation-delay: 9s;
+            transform: translate(-50%, -50%);
+        }
+        #adScene1Line1 {
+            position: absolute;
+            top: 80px;
+            left: 20px;
+            font-size: 46px;
+            color: white;
+            
+            overflow: hidden;
+            white-space: nowrap;
+            width: auto;
+            transform: perspective(400px) rotateX(4deg)
+                rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+                visibility: visible;
+                animation-name: line1Unveil;
+                animation-duration: 4s;
+                animation-delay: 0s;
+
+        }
+            
+
+        #adScene1Line2 {
+            position: absolute;
+            top: 150px;
+            left: 20px;
+            font-size: 46px;
+            color: white;
+
+            overflow: hidden;
+            white-space: nowrap;
+            width: auto;
+            transform: perspective(400px) rotateX(4deg)
+                rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+                visibility: visible;
+                animation-name: line2Unveil;
+                animation-duration: 5s;
+                animation-delay: 0s;
+                transform: translate(-50%, -50);
+        }
+
+        #adScene1Line3 {
+            position: absolute;
+            top: 220px;
+            left: 20px;
+            font-size: 46px;
+            color: white;
+
+            overflow: hidden;
+            white-space: nowrap;
+            width: auto;
+
+            transform: perspective(400px) rotateX(4deg)
+                rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+                visibility: visible;
+                animation-name: line3Unveil;
+                animation-duration: 6s;
+                animation-delay: 0s;
+        } 
+
+        #adScene2Line1 {
+            position: absolute;
+            top: 220px;
+            left: 20px;
+            font-size: 46px;
+
+            overflow: hidden;
+            white-space: nowrap;
+            width: auto;
+
+            transform: perspective(400px) rotateX(4deg)
+                rotateY(-25deg) rotateZ (-3deg) scale (1,2);
+                visibility: hidden;
+                animation-name: line1Unveil;
+                animation-duration: 5s;
+                animation-delay: 1s;
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 10px;
+
+
+       
+        }
+
+    </style>
 
 
 </head>
@@ -13,19 +140,24 @@
     <section>
         <div id="adWrapper">
             <div id="adScene1">
-                <img src="C:\Users\quing\OneDrive\Desktop\6420 Assessment 1\assets\piha image 1.jpg"
-                />
+                <div class="background-fadeIn">
+                <img src="./assets/pihaimage1.jpg"/>
             </div>
             <div id="adScene1Line1">Wild</div>
             <div id="adScene1Line2">Scenic</div>
             <div id="adScene1Line3">Beauty</div>
         </div>
             <div id="adScene2">
-                <div id="adReplay">
-                <img src ="C:\Users\quing\OneDrive\Desktop\6420 Assessment 1\assets\piha image 2.jpg"
-                />
-</div>
-    </div>
-        </section>
-    </body>
-</html>
+                <div class="background-fadeIn">
+                <img src ="./assets/pihaimage2.jpg"/>
+                <div id="adScene2Line1">Piha</div>
+                </div>
+                <div id="studentID">
+                    Quinton Gillanders
+                    <br>
+                    1569640
+                </div>
+                    </div>
+                        </section>
+                    </body>
+                </html>
