@@ -1,6 +1,4 @@
 #adScene1Image1 {
-
-    opacity: 100;
     position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,4 +7,90 @@
     top: -60px;
 
     visibility: visible;
+    animation-name: slideRight;
+    animation-duration: 5;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+    #adScene1Image2 {
+
+        opacity: 100;
+        position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1050px;
+        left: -531px;
+        top: -60px;
+    
+        visibility: visible;
+        }
+
+        #adScene1Image3 {
+
+            opacity: 100;
+            position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 1050px;
+            left: -531px;
+            top: -60px;
+        
+            visibility: visible;
+            }
+
+@keyframes slideRight {
+    0% { 
+        opacity: 0;
     }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0% { 
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+    @keyframes line1Unveil {
+        0% {
+            
+        }
+        12.5% {
+            width: 0;
+    
+        }
+        100% {
+            width: 300px;
+        }
+    }
+
+    @keyframes line2Unveil {
+        0% {
+            
+        }
+        12.5% {
+            width: 0;
+    
+        }
+        100% {
+            width: 300px;
+        }
+    }
+    @keyframes line3Unveil {
+        0% {
+            
+        }
+        12.5% {
+            width: 0;
+    
+        }
+        100% {
+            width: 300px;
+        }
+    }
+
+
+
