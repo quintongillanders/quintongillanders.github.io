@@ -1,22 +1,3 @@
-@keyframes showScene1 {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes showScene2 {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-    }
-
-
 .image-container {
     position: absolute;
     height: 1050px;
@@ -33,22 +14,28 @@
  
 @keyframes background-fadeIn {
  0% {
-
+        visibility: visible ;
     opacity: 0;
  }
  100% {
+    visibility: hidden;
     opacity: 1;
  }
 
  }
  
 
-@keyframes background-fadeOut {
+@keyframes background-zoomOut {
     0% {
         opacity: 1;
+        visibility: visible;
+        transform: scale(1.2);
+    }
+    70% {
+        transform: scale(1);
     }
     100% {
-        opacity: 0;
+        transform: scale(1);
     }
     }
 
@@ -89,19 +76,8 @@
         100% {
             width: 300px;
         }
-        }
-
-        @keyframes background-zoomOut{
-            0% {
-                opacity: 0;
-                transform: scale(1.2);
-
             }
-            100% {
-                opacity: 1;
-                transform: scale (1);
-            }
-        }
+        
 
 #adWrapper {
     width: 400px;
@@ -114,19 +90,18 @@
 
 #adScene1 {
 
-    opacity: 100; /*default opacity of 0*/
+    opacity: 0; /*default opacity of 0*/
     
     
     position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     height: 1050px;
     left: -531px;
     top: -60px;
    
 
-    visibility: visible;
-    animation-name: fadeIn;
+    visibility: hidden;
     animation-fill-mode: forwards;
     animation-name: background-fadeIn;
     animation-duration: 5s;
@@ -135,20 +110,20 @@
 }
 
 #adScene2 {
-    opacity: 100; /*default opacity of 0*/
+    opacity: 0; /*default opacity of 0*/
 
-    position: absolute;
+    position: relative;
+    background-repeat: repeat;
     height: 1050px;
     left: 531px;
     top: -60px;
     opacity: 0;
 
-    visibility: visible;
-    animation-name: zoomOut;
+    visibility: hidden;
     animation-fill-mode: forwards;
     animation-name: background-zoomOut;
     animation-duration: 4s;
-    animation-delay: 9s;
+    animation-delay: 5s;
 }
 
 

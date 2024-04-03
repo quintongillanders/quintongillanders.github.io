@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <metaname="viewport" content="width=device-width-initial-scale=1.0">
     <title>Piha Advertisement</title>
-    <link rel="stylesheet" type="text/css" href="C:\Users\GGPC\OneDrive\Desktop\6420 Assessment 1\piha.css">
+    <link rel="stylesheet" type="text/css" href="C:\Users\quing\OneDrive\Desktop\6420 Assessment 1\piha.css">
     <style>
         .image-container {
            position: absolute;
@@ -18,8 +18,8 @@
         }
 
     #adScene1Image1 {
-        position: center;
-        background-repeat: no-repeat;
+        position: relative;
+        background-repeat: repeat;
         background-size: cover;
         height: 1050px;
         left: -531px;
@@ -34,7 +34,8 @@
 
 }
 #adScene2Image2 {
-            position: absolute;
+            position: relative;
+            background-repeat: repeat;
             height: 1050px;
             left: 531px;
             top: -60px;
@@ -42,7 +43,7 @@
             animation-name: background-fadeOut;
             animation-duration: 4s;
             animation-delay: 9s;
-            transform: translate(-50%, -50%);
+            
         }
         #adScene1Line1 {
             position: absolute;
@@ -103,7 +104,7 @@
         } 
 
         #adScene2Line1 {
-            position: absolute;
+            position: center;
             top: 220px;
             left: 20px;
             font-size: 46px;
@@ -114,7 +115,7 @@
 
             transform: perspective(400px) rotateX(4deg)
                 rotateY(-25deg) rotateZ (-3deg) scale (1,2);
-                visibility: hidden;
+                visibility: visible;
                 animation-name: line1Unveil;
                 animation-duration: 5s;
                 animation-delay: 1s;
@@ -148,7 +149,7 @@
             <div id="adScene1Line3">Beauty</div>
         </div>
             <div id="adScene2">
-                <div class="background-fadeIn">
+                <div class="background-zoomOut">
                 <img src ="./assets/pihaimage2.jpg"/>
                 <div id="adScene2Line1">Piha</div>
                 </div>
