@@ -1,68 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <metaname="viewport" content="width=device-width-initial-scale=1.0">
-    <title>Mitre 10 Ad</title>
+    <title>Mitre 10 Advertisement</title>
     <link rel="stylesheet" type="text/css" href="C:\Users\GGPC\OneDrive\Desktop\6420 Assessment 1\mitre10.css">
     <style>
         .image-container {
+           position: absolute;
+           height: 1050px;
+           width: 100%;
+           top: 0;
+           left: 0;
+           opacity: 0;
+           animation-fill-mode: forwards; 
+        }
+
+    #adScene1Image1 {
+        position: absolute;
+        background-repeat: repeat;
+        background-size: cover;
+        height: 1050px;
+        left: -531px;
+        top: -60px;
+        
+
+        visibility: visible;
+        animation-name: fadeIn;
+        animation-duration: 5s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+
+}
+#adScene2Image1 {
             position: absolute;
+            background-repeat: repeat;
+            background-size: cover;
             height: 1050px;
-            width: 100%;
-            top: 0;
-            left: 0;
+            left: -531px;
+            top: -60px;
             opacity: 0;
-            animation-fill-mode: forwards;
-
-        }
-        #adScene1Image1 {
-            position: center;
-            background-repeat: no-repeat;
+            animation-name: background-zoomOut;
+            animation-duration: 4s;
+            animation-delay: 9s;
+}
+            #adScene2Image1 {
+            position: absolute;
+            background-repeat: repeat;
             background-size: cover;
             height: 1050px;
             left: -531px;
             top: -60px;
-
-            visibility: visible;
-            animation-name: slideRight;
-            animation-duration: 5;
-            animation-delay: 0s;
-            animation-fill-mode: forwards;
-        }
-        #adScene1Image2 {
-            position: absolute;
-            height: 1050px;
-            left: -531px;
-            top: -60px;
-
-            visibility: visible;
+            opacity: 0;
+            animation-name: background-zoomOut;
+            animation-duration: 4s;
+            animation-delay: 9s;
             
-            }
-            #adScene1Image3 {
+            
+        }
+
+        #adScene3Image1 {
             position: center;
-            background-repeat: no-repeat;
+            background-repeat: repeat;
             background-size: cover;
             height: 1050px;
             left: -531px;
             top: -60px;
+            opacity: 0;
+            animation-name: background-zoomOut;
+            animation-duration: 4s;
+            animation-delay: 9s;
+        }
 
-            visibility: visible;
-            }
-
-            #adScene1Image4 {
+        #adScene4Image1 {
             position: center;
-            background-repeat: no-repeat;
+            background-repeat: repeat;
             background-size: cover;
             height: 1050px;
             left: -531px;
             top: -60px;
+            opacity: 0;
+            animation-name: background-zoomOut;
+            animation-duration: 4s;
+            animation-delay: 9s;
+        }
+    
+            
 
-            visibility: visible;
-            }
-
-            #adScene1Line1 {
-            position: absolute;
+        #adScene1Line1 {
+            position: center;
             top: 80px;
             left: 20px;
             font-size: 46px;
@@ -71,14 +98,25 @@
             overflow: hidden;
             white-space: nowrap;
             width: auto;
-                visibility: visible;
+            transform: perspective(400px) rotateX(4deg)
+                rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+                visibility: visible ;
                 animation-name: line1Unveil;
                 animation-duration: 4s;
-                animation-delay: 0s;
-            }
+                animation-delay: s;
+                font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 10px;
 
-            #adScene1Line2 {
-            position: absolute;
+        }
+            
+
+        #adScene1Line2 {
+            position: center;
             top: 150px;
             left: 20px;
             font-size: 46px;
@@ -87,34 +125,25 @@
             overflow: hidden;
             white-space: nowrap;
             width: auto;
-            
+            transform: perspective(400px) rotateX(4deg)
+                rotateY(-25deg) rotateZ(-3deg) scale(1,2);
                 visibility: visible;
                 animation-name: line2Unveil;
                 animation-duration: 5s;
                 animation-delay: 0s;
                 transform: translate(-50%, -50);
-            }
+                font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 10px;
+        }
 
-            #adScene2Line1 {
-                
-            position: absolute;
-            top: 150px;
-            left: 20px;
-            font-size: 46px;
-            color: black;
-            overflow: hidden;
-            white-space: nowrap;
-            width: auto;
-            visibility: visible;
-            animation-name: line1Unveil;
-            animation-duration: 5s;
-            animation-delay: 0s;
-            transform: translate(-50%, -50);
-            }
-
-            #adScene3Line1 {
-            position: absolute;
-            top: 150px;
+        #adScene1Line3 {
+            position: center;
+            top: 220px;
             left: 20px;
             font-size: 46px;
             color: white;
@@ -122,17 +151,56 @@
             overflow: hidden;
             white-space: nowrap;
             width: auto;
-           
-            visibility: visible;
-            animation-name: line1Unveil;
-            animation-duration: 5s;
-            animation-delay: 0s;
-            transform: translate(-50%, -50);
-            }
+
+            transform: perspective(400px) rotateX(4deg)
+                rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+                visibility: visible;
+                animation-name: line3Unveil;
+                animation-duration: 4s;
+                animation-delay: 0s;
+                font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 10px;
+        } 
+
+        #adScene2Line1 {
+            position: center;
+            top: 220px;
+            left: 20px;
+            font-size: 46px;
+            color: white;
+
+            overflow: hidden;
+            white-space: nowrap;
+            width: auto;
+
+            transform: perspective(400px) rotateX(4deg)
+                rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+                visibility: hidden;
+                animation-name: line1Unveil;
+                animation-duration: 4s;
+                animation-delay: 5s;
             
-            #adScene3Line2 {
-            position: absolute;
-            top: 150px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 10px;
+
+
+       
+        }
+
+
+        #adScene3Line1 {
+            position: center;
+            top: 220px;
             left: 20px;
             font-size: 46px;
             color: white;
@@ -140,97 +208,161 @@
             overflow: hidden;
             white-space: nowrap;
             width: auto;
-           
-            visibility: visible;
-            animation-name: line2Unveil;
-            animation-duration: 5s;
-            animation-delay: 0s;
-            transform: translate(-50%, -50);
-            }
 
-            #adScene4Line1 {
-            position: absolute;
-            top: 150px;
-            left: 20px;
-            font-size: 46px;
-            color: white;
-
-            overflow: hidden;
-            white-space: nowrap;
-            width: auto;
-           
-            visibility: visible;
-            animation-name: line1Unveil;
-            animation-duration: 5s;
-            animation-delay: 0s;
-            transform: translate(-50%, -50);
-            }
-
-            #adScene4Line2 {
-            position: absolute;
-            top: 150px;
-            left: 20px;
-            font-size: 46px;
-            color: white;
-
-            overflow: hidden;
-            white-space: nowrap;
-            width: auto;
-           
-            visibility: visible;
-            animation-name: line2Unveil;
-            animation-duration: 5s;
-            animation-delay: 0s;
-            transform: translate(-50%, -50);
-            }
-
-            #adScene4Line3 {
-            position: absolute;
-            top: 150px;
-            left: 20px;
-            font-size: 46px;
-            color: white;
-
-            overflow: hidden;
-            white-space: nowrap;
-            width: auto;
-           
-            visibility: visible;
-            animation-name: line3Unveil;
-            animation-duration: 5s;
-            animation-delay: 0s;
-            transform: translate(-50%, -50);
-            }
-
+            transform: perspective(400px) rotateX(4deg)
+                rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+                visibility: hidden;
+                animation-name: line1Unveil;
+                animation-duration: 4s;
+                animation-delay: 5s;
             
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        #adScene3Line2 {
+            position: center;
+            top: 220px;
+            left: 20px;
+            font-size: 46px;
+            color: white;
+
+            overflow: hidden;
+            white-space: nowrap;
+            width: auto;
+
+            transform: perspective(400px) rotateX(4deg)
+                rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+                visibility: hidden;
+                animation-name: line2Unveil;
+                animation-duration: 4s;
+                animation-delay: 5s;
             
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        #adScene4Line1 {
+            position: center;
+            top: 220px;
+            left: 20px;
+            font-size: 46px;
+            color: white;
+
+            overflow: hidden;
+            white-space: nowrap;
+            width: auto;
+
+            transform: perspective(400px) rotateX(4deg)
+                rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+                visibility: hidden;
+                animation-name: line1Unveil;
+                animation-duration: 4s;
+                animation-delay: 5s;
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        #adScene4Line2 {
+            position: center;
+            top: 220px;
+            left: 20px;
+            font-size: 46px;
+            color: white;
+
+            overflow: hidden;
+            white-space: nowrap;
+            width: auto;
+
+            transform: perspective(400px) rotateX(4deg)
+                rotateY(-25deg) rotateZ(-3deg) scale(1,2);
+                visibility: hidden;
+                animation-name: line2Unveil;
+                animation-duration: 4s;
+                animation-delay: 5s;
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+
+        #studentID {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 16px;
+    color: white;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 9s;
+}
+
+
+
+    
+
     </style>
 
+
 </head>
+
 <body>
     <section>
-        <div id="adWrapper">
-            <div id="adScene1"></div>
-            <img src="./assets/mitre10ad1.jpg"/>
+        <div id="adWrapper" style="position: relative; width: 400px; height: 1050px;">
+            <div id="adScene1">
+                <div id="adScene1" style="position:absolute; width: 400px; height: 1050px; background-color: red;"></div>
+                <div class="background-fadeIn">
+                <img src="./assets/mitre10ad1.jpg"/>
+            </div>
             <div id="adScene1Line1">Create your</div>
-            <div id="adScene1Line2">Dream Kitchen</div>
+            <div id="adScene1Line2">dream kitchen</div>
         </div>
-        <div id="adScene2"></div>
-        <img scr="./assets/mitre10ad2.jpg"/>
-        <div id="adScene2Line1">On trend</div>
-    </div>
-        <div id="adScene3"></div>
-        <img src="./assets/mitre10ad3.jpg"/>
-        <div id="AdScene3Line1">And on</div>
-        <div id="AdScene3Line2">budget</div>
-</div>
-        <div id="adScene4"></div>
-        <img src="./assets/mitre10ad4.jpg"/>
-        <div id="adScene4Line1">Explore our</div>
-        <div id="adScene4Line2">kitchen</div>
-        <div id="adScene4Line3">range</div>
-</div>
-
-
-
-</body>
+        <div id="adWrapper" style="position: relative; width: 400px; height: 1050px;"></div>
+            <div id="adScene2" style="position: absolute; top: 0; left: 0; width: 400px; height: 1050px; background-image: url('./assets/mitre10ad2.jpg');"></div>
+                <div class="background-zoomOut">
+                <img src ="./assets/mitre10ad2.jpg"/>
+                <div id="adScene2Line1">On trend </div>
+                </div>
+                <div id="adWrapper" style="position: relative; width: 400px; height: 1050px;"></div>
+                <div id="adScene3" style="position: absolute; top: 0; left: 0; width: 400px; height: 1050px; background-image: url('./assets/mitre10ad3.jpg');"></div>
+                <div class="background-fadeIn">
+                <div id="adScene3Line1">And on</div>
+                <div id="adScene3Line2">budget</div>
+                </div>
+                <div id="adWrapper" style="position: relative; width: 400px; height: 1050px;"></div>
+                <div id="adScene4" style="position: absolute; top: 0; left: 0; width: 400px; height: 1050px; background-image: url('./assets/mitre10ad4.jpg');"></div>
+                <div class="background-fadeIn"></div>
+                <div id="adScene4Line1">Explore our</div>
+                <div id="adScene4Line2">kitchen range</div>
+                <div class="background-fadeIn">
+                <div id="studentID">
+                    Quinton Gillanders
+                    <br>
+                    1569640
+                </div>
+                    </div>
+                        </section>
+                    </body>
+                </html>

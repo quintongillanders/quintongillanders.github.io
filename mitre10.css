@@ -1,3 +1,96 @@
+.image-container {
+    position: relative;
+    height: 1050px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation-fill-mode: forwards; 
+ }
+
+ .image-container.fade-in{
+    opacity: 1;
+ }
+ 
+@keyframes background-fadeIn {
+ 0% {
+        visibility: visible ;
+    opacity: 0;
+ }
+ 100% {
+    visibility: hidden;
+    opacity: 1;
+ }
+
+ }
+ 
+
+@keyframes background-zoomOut {
+    0% {
+        opacity: 1;
+        visibility: visible;
+        
+    }
+     
+    100% {
+        visibility: visible;
+        opacity: 1;
+        
+    }
+    }
+
+
+
+
+@keyframes line1Unveil {
+    0% {
+        
+    }
+    12.5% {
+        width: 0;
+
+    }
+    100% {
+        width: 300px;
+    }
+}
+
+@keyframes line2Unveil {
+    0% {
+    }
+    12.5% {
+        width: 0;
+    }
+    100% {
+        width: 300px;
+        
+    }
+    }
+
+    @keyframes line3Unveil {
+        0% {
+        }
+        12.5% {
+            width: 0;
+        }
+        100% {
+            width: 300px;
+        }
+            }
+
+            @keyframes line1Scene2Unveil {
+                0% {
+               visibility: visible;
+               width: 0;
+                }
+                100% {
+                    visibility: visible;
+                    width: 300px;
+                }
+            }
+
+        
+
 #adWrapper {
     width: 400px;
     height: 800px;
@@ -7,99 +100,107 @@
     overflow: hidden;
 }
 
-#adScene1Image1 {
-    position: absolute;
-    background-repeat: no-repeat;
+#adScene1 {
+
+    opacity: 0; /*default opacity of 0*/
+    
+    
+    position: center;
+    background-repeat: repeat;
     background-size: cover;
     height: 1050px;
     left: -531px;
     top: -60px;
+    opacity: 0;
 
-    visibility: visible;
-    animation-name: slideRight;
-    animation-duration: 5;
-    animation-delay: 0s;
+    visibility: hidden;
     animation-fill-mode: forwards;
+    animation-name: background-fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    
 }
-    #adScene1Image2 {
 
-        opacity: 100;
-        position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 1050px;
-        left: -531px;
-        top: -60px;
+#adScene2 {
+    opacity: 0; /*default opacity of 0*/
     
-        visibility: visible;
-        }
+    
+    position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 1050px;
+    left: -531px;
+    top: -60px;
+    opacity: 0;
 
-        #adScene1Image3 {
-
-            opacity: 100;
-            position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 1050px;
-            left: -531px;
-            top: -60px;
-        
-            visibility: visible;
-            }
-
-@keyframes slideRight {
-    0% { 
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    animation-name: background-fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    
+    
 }
-@keyframes fadeIn {
-    0% { 
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+
+#adScene3 {
+    opacity: 0; /*default opacity of 0*/
+    
+    
+    position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 1050px;
+    left: -531px;
+    top: -60px;
+    opacity: 0;
+
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    animation-name: background-fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    
+    
 }
-    @keyframes line1Unveil {
-        0% {
-            
-        }
-        12.5% {
-            width: 0;
+
+#adScene4 {
+    opacity: 0; /*default opacity of 0*/
     
-        }
-        100% {
-            width: 300px;
-        }
-    }
-
-    @keyframes line2Unveil {
-        0% {
-            
-        }
-        12.5% {
-            width: 0;
     
-        }
-        100% {
-            width: 300px;
-        }
-    }
-    @keyframes line3Unveil {
-        0% {
-            
-        }
-        12.5% {
-            width: 0;
+    position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 400px;
+    height: 1050px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    animation-name: background-fadeIn;
+    animation-duration: 5s;
+    animation-delay: 10s;
     
-        }
-        100% {
-            width: 300px;
-        }
-    }
+}
+
+#adScene2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
-
+#studentID {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 16px;
+    color: black;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 9s;
+}

@@ -33,8 +33,8 @@
     }
      
     100% {
-        visibility: hidden;
-        opacity: 0;
+        visibility: visible;
+        opacity: 1;
         
     }
     }
@@ -80,14 +80,15 @@
 
             @keyframes line1Scene2Unveil {
                 0% {
-                }
-                12.5% {
-                    width: 0;
+               visibility: visible;
+               width: 0;
                 }
                 100% {
+                    visibility: visible;
                     width: 300px;
                 }
-                    }
+            }
+
         
 
 #adWrapper {
@@ -115,7 +116,7 @@
     visibility: hidden;
     animation-fill-mode: forwards;
     animation-name: background-fadeIn;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-delay: 0s;
     
 }
@@ -135,10 +136,18 @@
 
     visibility: hidden;
     animation-fill-mode: forwards;
-    animation-name: background-zoomOut;
-    animation-duration: 4s;
-    animation-delay: 5s;
+    animation-name: background-fadeIn;
+    animation-duration: 8s;
+    animation-delay: 4s;
     
+}
+
+#adScene2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 

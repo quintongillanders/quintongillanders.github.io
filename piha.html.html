@@ -58,10 +58,17 @@
             width: auto;
             transform: perspective(400px) rotateX(4deg)
                 rotateY(-25deg) rotateZ(-3deg) scale(1,2);
-                visibility: visible;
+                visibility: visible ;
                 animation-name: line1Unveil;
                 animation-duration: 4s;
-                animation-delay: 0s;
+                animation-delay: s;
+                font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 10px;
 
         }
             
@@ -83,6 +90,13 @@
                 animation-duration: 5s;
                 animation-delay: 0s;
                 transform: translate(-50%, -50);
+                font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 10px;
         }
 
         #adScene1Line3 {
@@ -100,8 +114,15 @@
                 rotateY(-25deg) rotateZ(-3deg) scale(1,2);
                 visibility: visible;
                 animation-name: line3Unveil;
-                animation-duration: 6s;
+                animation-duration: 4s;
                 animation-delay: 0s;
+                font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 10px;
         } 
 
         #adScene2Line1 {
@@ -116,7 +137,7 @@
             width: auto;
 
             transform: perspective(400px) rotateX(4deg)
-                rotateY(-25deg) rotateZ (-3deg) scale (1,2);
+                rotateY(-25deg) rotateZ(-3deg) scale(1,2);
                 visibility: hidden;
                 animation-name: line1Scene2Unveil;
                 animation-duration: 4s;
@@ -139,11 +160,11 @@
     bottom: 20px;
     left: 20px;
     font-size: 16px;
-    color: white;
+    color: black;
     opacity: 0;
     animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-delay: 9s;
+    animation-duration: 3s;
+    animation-delay: s;
 }
 
 
@@ -168,15 +189,12 @@
             <div id="adScene1Line3">Beauty</div>
         </div>
         <div id="adWrapper" style="position: relative; width: 400px; height: 1050px;"></div>
-            <div id="adScene2" style="position: absolute; top: 0; left: 0; width: 400px; height: 1050px; background-color:blue"></div>
+            <div id="adScene2" style="position: absolute; top: 0; left: 0; width: 400px; height: 1050px; background-image: url('./assets/pihaimage2.jpg');"></div>
                 <div class="background-zoomOut">
                 <img src ="./assets/pihaimage1.jpg"/>
                 <div id="adScene2Line1">Piha</div>
                 </div>
-                <div id="studentID">
-                    Quinton Gillanders
-                    <br>
-                    1569640
+                <div id="studentID">Quinton Gillanders 1569640</div>
                 </div>
                     </div>
                         </section>
