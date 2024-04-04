@@ -136,8 +136,8 @@
     visibility: hidden;
     animation-fill-mode: forwards;
     animation-name: background-fadeIn;
-    animation-duration: 3s;
-    animation-delay: 0s;
+    animation-duration: 4s;
+    animation-delay: 3s;
     
     
 }
@@ -157,8 +157,8 @@
     visibility: hidden;
     animation-fill-mode: forwards;
     animation-name: background-fadeIn;
-    animation-duration: 3s;
-    animation-delay: 0s;
+    animation-duration: 4s;
+    animation-delay: 6s;
     
     
 }
