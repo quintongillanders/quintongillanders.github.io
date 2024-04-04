@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <metaname="viewport" content="width=device-width-initial-scale=1.0">
     <title>Piha Advertisement</title>
-    <link rel="stylesheet" type="text/css" href="C:\Users\quing\OneDrive\Desktop\6420 Assessment 1\piha.css">
+    <link rel="stylesheet" type="text/css" href="C:\Users\GGPC\OneDrive\Desktop\6420 Assessment 1\piha.css">
     <style>
         .image-container {
            position: absolute;
@@ -36,11 +36,12 @@
 #adScene2Image2 {
             position: relative;
             background-repeat: repeat;
+            background-size: cover;
             height: 1050px;
-            left: 531px;
+            left: -531px;
             top: -60px;
             opacity: 0;
-            animation-name: background-fadeOut;
+            animation-name: background-zoomOut;
             animation-duration: 4s;
             animation-delay: 9s;
             
@@ -104,10 +105,11 @@
         } 
 
         #adScene2Line1 {
-            position: center;
+            position: absolute;
             top: 220px;
             left: 20px;
             font-size: 46px;
+            color: white;
 
             overflow: hidden;
             white-space: nowrap;
@@ -115,10 +117,10 @@
 
             transform: perspective(400px) rotateX(4deg)
                 rotateY(-25deg) rotateZ (-3deg) scale (1,2);
-                visibility: visible;
-                animation-name: line1Unveil;
-                animation-duration: 5s;
-                animation-delay: 1s;
+                visibility: hidden;
+                animation-name: line1Scene2Unveil;
+                animation-duration: 4s;
+                animation-delay: 5s;
             
             font-family: Arial, Helvetica, sans-serif;
             font-size: 24px;
@@ -132,6 +134,22 @@
        
         }
 
+        #studentID {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 16px;
+    color: white;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 9s;
+}
+
+
+
+    
+
     </style>
 
 
@@ -139,8 +157,9 @@
 
 <body>
     <section>
-        <div id="adWrapper">
+        <div id="adWrapper" style="position: relative; width: 400px; height: 1050px;">
             <div id="adScene1">
+                <div id="adScene1" style="position:absolute; width: 400px; height: 800px; background-color: red;"></div>
                 <div class="background-fadeIn">
                 <img src="./assets/pihaimage1.jpg"/>
             </div>
@@ -148,9 +167,10 @@
             <div id="adScene1Line2">Scenic</div>
             <div id="adScene1Line3">Beauty</div>
         </div>
-            <div id="adScene2">
+        <div id="adWrapper" style="position: relative; width: 400px; height: 1050px;"></div>
+            <div id="adScene2" style="position: absolute; top: 0; left: 0; width: 400px; height: 1050px; background-color:blue"></div>
                 <div class="background-zoomOut">
-                <img src ="./assets/pihaimage2.jpg"/>
+                <img src ="./assets/pihaimage1.jpg"/>
                 <div id="adScene2Line1">Piha</div>
                 </div>
                 <div id="studentID">

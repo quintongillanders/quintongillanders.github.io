@@ -1,5 +1,5 @@
 .image-container {
-    position: absolute;
+    position: center;
     height: 1050px;
     width: 100%;
     top: 0;
@@ -29,13 +29,13 @@
     0% {
         opacity: 1;
         visibility: visible;
-        transform: scale(1.2);
+        
     }
-    70% {
-        transform: scale(1);
-    }
+     
     100% {
-        transform: scale(1);
+        visibility: hidden;
+        opacity: 0;
+        
     }
     }
 
@@ -77,6 +77,17 @@
             width: 300px;
         }
             }
+
+            @keyframes line1Scene2Unveil {
+                0% {
+                }
+                12.5% {
+                    width: 0;
+                }
+                100% {
+                    width: 300px;
+                }
+                    }
         
 
 #adWrapper {
@@ -99,7 +110,7 @@
     height: 1050px;
     left: -531px;
     top: -60px;
-   
+    opacity: 0;
 
     visibility: hidden;
     animation-fill-mode: forwards;
@@ -111,12 +122,15 @@
 
 #adScene2 {
     opacity: 0; /*default opacity of 0*/
-
-    position: relative;
+    
+    
+    position: center;
     background-repeat: repeat;
+    background-size: cover;
+    width: 400px;
     height: 1050px;
-    left: 531px;
-    top: -60px;
+    left: 0;
+    top: 0;
     opacity: 0;
 
     visibility: hidden;
@@ -124,6 +138,7 @@
     animation-name: background-zoomOut;
     animation-duration: 4s;
     animation-delay: 5s;
+    
 }
 
 
@@ -138,7 +153,6 @@
     animation-duration: 1s;
     animation-delay: 9s;
 }
-
 
 
 
