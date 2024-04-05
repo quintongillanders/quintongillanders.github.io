@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Piha Booking System</title>
+
+    <link rel="stylesheet" href="C:\Users\GGPC\OneDrive\Desktop\6420 Assessment 1\pihabookingsystem.css">
+</head>
+
+<body>
+    <div class="container">
+    <section>
+        <h2 class="underline">Welcome to Piha Beach Lodges!</h2>
+        <div class="container-half card">
+            <subtitle class="card-title"></subtitle>
+            <progress value="10" max="100"></progress>
+            <div id="formPage1" class="form-page" style="display: block">
+            </div> <!-- page title -->
+            <h3>Personal Details</h3>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email Address:</label><br>
+                <input type="text" id="name" name= "email"><br>
+                <button class="next" type="button" onclick="showPage(2)">
+                    Next
+                </button>
+                </form>
+                </div>
+                <div id="formPage2" class="form-page" style="display: none">
+                    <h3>Additional Details</h3>
+                <label for="numberofpeople">Number of people staying</label><br>
+                <input type="number" id="number of people" name="number of people"><br>
+                <label for="cooking facilities">Do you need a cooking facility?</label><br>
+                <input type="radio" id="cooking yes" name="cooking facilities" value="yes">
+                <label for="cooking yes">Yes</label>
+                <input type="radio" id="cooking no" name="cooking facilities" value="no">
+                <label for="cooking no">No</label><br>
+                <button class="next" type="button" onclick="showPage(2)">
+                    Next
+                </button>
+                <button class="previous" type="button" onclick="showPage(1)">
+                    Previous
+                </button>
+            </form>
+        </div>
+        <div id="formPage3" class="form-page" style="display: none">
+            <h3>Equipment</h3>
+                <label for="equipmentusage">Do you need to use any equipment? EG: Swimming goggles, surf board</label><br>
+                <input type="radio" id="equipment yes" name="equipment" value="yes">
+                <label for="equipment yes">Yes</label>
+                <input type="radio" id="equipment no" name="equipment" value="no">
+                <label for="equipment no">No</label><br>
+                <button class="button" type="button" onclick="showPage(4)">
+                    Next
+                </button>
+                <button class="previous" type="button" onclick="showPage(2)">
+                    Previous
+                </button>
+            </form>
+        </div>
+        <div id="formPage4" class="form-page" style="display: none">
+        <h3>Conservation Agreement</h3>
+                <label for="conservationagreement">Do you agree with the Local Native Conservation Agreement?</label><br>
+                <input type="radio" id="conservationagreement yes" name="conservationagreement" value="yes">
+                <label for="conservationagreement yes">Yes</label>
+                <input type="radio" id="conservationagreement no" name="conservationagreement" value="no">
+                <label for="conservationagreement no">No</label><br>
+                <button class="previous" type="button" onclick="showPage(3)">
+                    Previous
+                </button>
+                <button class="next" type="button" onclick="submitData()">
+                    Submit
+                    </button>
+            </form>
+        </form>
+
+            </div>
+
+            <script>
+               function showPage(pageNumber) {
+                document.getElementById('form-page' + (pageNumber - 1)).style.display = 'none';
+                document.getElementById('form-page' + (pageNumber - 1)).style.display = 'block';
+               }
+
+               
+            </script>
+        </body>
+        </html>
+
+
+
+
